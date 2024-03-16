@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="Calculator.MortgageCalculator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<StackPanel Margin="30">
+		<!-- Title -->
+		<TextBlock x:Name="mortgageCalculatorTextBlock" HorizontalAlignment="Center" Margin="20" TextWrapping="Wrap" Text="Mortgage Calculator" VerticalAlignment="Top" FontWeight="Bold" FontSize="48"/>
+		<!-- Principal Borrrow -->
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<TextBlock x:Name="principalBorrowTextBlock" TextAlignment="Right" Margin="20" MinWidth="250" TextWrapping="Wrap" Text="Principal Borrow $:" VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="0.606,-0.031"/>
+			<TextBox x:Name="principalBorrowTextBox" HorizontalAlignment="Left" Margin="20" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264" Height="32"/>
+		</StackPanel>
+		<!-- Years -->
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<TextBlock x:Name="yearsTextBlock" TextAlignment="Right" Margin="20" TextWrapping="Wrap" MinWidth="250" Text="Years:" VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="0.917,0.625"/>
+			<TextBox x:Name="yearsTextBox" HorizontalAlignment="Left" Margin="20" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264"/>
+		</StackPanel>
+		<!-- Months -->
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<TextBlock x:Name="monthsTextBlock" TextAlignment="Right" Margin="20" TextWrapping="Wrap" MinWidth="250" Text="and Months:" VerticalAlignment="Top" FontSize="22"/>
+			<TextBox x:Name="monthsTextBox" HorizontalAlignment="Left" Margin="20" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264"/>
+		</StackPanel>
+		<!-- Yearly Interest Rate -->
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<TextBlock x:Name="yearlyInterestRateTextBlock" TextAlignment="Right" Margin="20" MinWidth="250" TextWrapping="Wrap" Text="Yearly Interest Rate:" VerticalAlignment="Top" FontSize="22"/>
+			<TextBox x:Name="yearlyInterestRateTextBox" HorizontalAlignment="Left" Margin="20" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264"/>
+		</StackPanel>
+		<!-- Monthly Interest Rate -->
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<TextBlock x:Name="monthlyInterestRateTextBlock" TextAlignment="Right" Margin="20" MinWidth="250" TextWrapping="Wrap" Text="Monthly Interest Rate:" VerticalAlignment="Center" FontSize="22"/>
+			<TextBox x:Name="monthlyInterestRateTextBox" HorizontalAlignment="Left" Margin="20" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="264"/>
+		</StackPanel>
+		<!-- Monthly Repayment -->
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<TextBlock x:Name="monthlyRepaymentTextBlock" TextAlignment="Right" Margin="20" MinWidth="250" TextWrapping="Wrap" Text="Monthly Repayment $:" VerticalAlignment="Top" FontSize="22"/>
+			<TextBox x:Name="monthlyRepaymentTextBox" HorizontalAlignment="Left" Margin="20" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264" RenderTransformOrigin="0.476,2.188"/>
+		</StackPanel>
+		<!-- Buttons -->
+		<StackPanel HorizontalAlignment="Center">
+			<Button x:Name="btnCalculate" Content="Calculate" Margin="20" VerticalAlignment="Top" FontSize="24" Width="180" Height="50" FontWeight="Bold" Click="btnCalculate_Click"/>
+			<Button x:Name="bnExit" Content="Exit" Margin="20" VerticalAlignment="Top" FontSize="24" Width="180" Height="50" FontWeight="Bold" Click="bnExit_Click"/>
+		</StackPanel>
+	</StackPanel>
+</Page>
