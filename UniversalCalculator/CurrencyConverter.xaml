@@ -47,7 +47,7 @@
 			<TextBlock x:Name="fromCurrencyUnitTextBlock" HorizontalAlignment="Center" Margin="10"></TextBlock>
 			<TextBlock x:Name="toCurrencyUnitTextBlock" HorizontalAlignment="Center" Margin="10"></TextBlock>
 			<Button x:Name="CurrencyConversionButton" FontSize="44" HorizontalAlignment="Center" Margin="10" Click="CurrencyConversionButton_Click">Currency Conversion</Button>
-			<Button x:Name="Exit" FontSize="44" HorizontalAlignment="Center" Margin="10">Exit</Button>
+			<Button x:Name="Exit" FontSize="44" HorizontalAlignment="Center" Margin="10" Click="Exit_Click">Exit</Button>
 		</StackPanel>
 	</Grid>
 </Page>

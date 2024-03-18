@@ -138,6 +138,9 @@ namespace Calculator
 			toCurrencyUnitTextBlock.Text = $"1 {toCurrency} = {1 / conversionRate} {fromCurrency}";
 		}
 
-
+		private void Exit_Click(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(MainMenu));
+		}
 	}
 }
