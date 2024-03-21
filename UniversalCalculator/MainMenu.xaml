@@ -35,6 +35,7 @@
 			<Button x:Name="btnMaths" Content="Maths Calculator" Style="{StaticResource CalculatorButtonStyle}" Click="btnMaths_Click" />
 			<Button x:Name="btnMortgage" Content="Mortgage Calculator" Style="{StaticResource CalculatorButtonStyle}" Click="btnMortgage_Click" />
 			<Button x:Name="btnCurrency" Content="Currency Converter" Style="{StaticResource CalculatorButtonStyle}" Click="btnCurrency_Click"/>
+			<Button x:Name="btnTrip" Content="Trip Calculator" Style="{StaticResource CalculatorButtonStyle}" Click="btnTrip_Click"/>
 			<Button x:Name="btnExit" Content="Exit" Style="{StaticResource CalculatorButtonStyle}" Click="btnExit_Click"/>
 		</StackPanel>
 	</StackPanel>
