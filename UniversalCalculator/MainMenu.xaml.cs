@@ -44,13 +44,10 @@ namespace Calculator
 
 		// Trip calculator to be developed later
 
-		/*
 		private void btnTrip_Click(object sender, RoutedEventArgs e)
 		{
-			this.Frame.Navigate(typeof(TripCalculator));
+			// this.Frame.Navigate(typeof(TripCalculator));
 		}
-		*/
-
 
 		private void btnExit_Click(object sender, RoutedEventArgs e)
 		{
